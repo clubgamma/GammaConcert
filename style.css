@@ -22,9 +22,19 @@ body {
   flex-wrap: wrap;
 }
 .heading img {
-  margin-top: 30px;
+  margin-top: 40px;
   width: 550px;
   border-radius: 25px;
+  opacity: 0.4;
+  -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}
+.heading img:hover {
+  transform: scale(1.1);
+  transform: translate(-25px, -15px);
+  opacity: 0.8;
 }
 
 .left {
