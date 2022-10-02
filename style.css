@@ -8,9 +8,11 @@ body {
   border-block-color: white;
   min-height: 96vh;
   color: white;
-  background-image: url("img/h9.jpg");
-  background: linear-gradient(270deg, #08070c, #11183f);
+  /* background-image: url("img/h9.jpg"); */
+  background: linear-gradient(270deg, #08070c, #130d1f, #171030, #11183f);
+  background-size: 250%;
   background-repeat: no-repeat;
+  animation: bg-animation 10s infinite alternate;
 }
 .heading {
   margin: 30px;
@@ -119,5 +121,14 @@ h2 {
   }
   .heading img {
     width: 80%;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
   }
 }
